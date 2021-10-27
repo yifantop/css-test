@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BACKGROUND</title>
+  <style>
+      /*
+      background-color
+      background-image
+      background-clip
+      background-origin
+      background-position
+      background-repeat
+      background-size
+      background-attachment
+      */
+      body {
+          background-color: darkcyan;
+      }
+
+      .myDiv {
+          width: 300px;
+          height: 300px;
+          border: 20px solid hsla(0, 0%, 100%, .2);
+          background-image: url("./img/3.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-origin: padding-box;
+          background-position: center;
+          background-clip: padding-box;
+      }
+
+      .container {
+          width: 90vw;
+          display: flex;
+          border: 10px solid red;
+      }
+
+      .item {
+          height: 200px;
+          flex: 1;
+          background-color: darkgoldenrod;
+          margin: 10px;
+      }
+
+      .active {
+          flex: 2;
+      }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="item active"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+</body>
+</html>
